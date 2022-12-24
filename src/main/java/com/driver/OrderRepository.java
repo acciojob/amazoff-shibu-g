@@ -50,9 +50,9 @@ public class OrderRepository{
 		List<String>orderess=orderidpair.get(id);
 		return orderess;
 	}
-	public List<Order>getallorders(){
-		List<Order>o=new ArrayList<>();
-		for(Order ob:orders.values()) {
+	public List<String>getallorders(){
+		List<String>o=new ArrayList<>();
+		for(String ob:orders.keySet()){
 			o.add(ob);
 		}
 		return o;
